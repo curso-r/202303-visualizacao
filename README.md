@@ -42,7 +42,6 @@ Fora do horário de aula ou monitoria:
 | [02-otimizacao.R](https://curso-r.github.io/202303-visualizacao/materiais/exemplos_de_aula/02-otimizacao.R)         |
 | [03-extensoes.R](https://curso-r.github.io/202303-visualizacao/materiais/exemplos_de_aula/03-extensoes.R)           |
 | [04-interatividade.R](https://curso-r.github.io/202303-visualizacao/materiais/exemplos_de_aula/04-interatividade.R) |
-| [fontes](https://curso-r.github.io/202303-visualizacao/materiais/exemplos_de_aula/fontes)                           |
 
 ## Práticas
 
@@ -62,7 +61,6 @@ Fora do horário de aula ou monitoria:
 | [03-pinguins_histogram.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-pinguins_histogram.png) |
 | [03-starwars.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-starwars.png)                     |
 | [04-interatividade-sf.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/04-interatividade-sf.R)       |
-| [star_wars](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/star_wars)                                 |
 
 ## Material extra
 
