@@ -4,6 +4,7 @@ params:
   turma: 202303-visualizacao
   nome_curso: Visualização de dados
   download_material: 'TRUE'
+  aula: 1
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -66,6 +67,7 @@ Fora do horário de aula ou monitoria:
 ## Scripts utilizados em aula
 
 ```{r}
+rx_aulas <- paste(paste0("0", 1:params$aula), collapse = "|")
 "materiais/exemplos_de_aula/" |>
   fs::dir_ls(fail = FALSE, type = "file") |>
   path_to_url() |>
@@ -79,6 +81,7 @@ Fora do horário de aula ou monitoria:
 "praticas/" |>
   fs::dir_ls(fail = FALSE) |>
   path_to_url() |>
+  dplyr::filter(stringr::str_detect(url, rx_aulas)) |> 
   dplyr::select(Exemplo = url) |>
   knitr::kable()
 ```
@@ -86,9 +89,11 @@ Fora do horário de aula ou monitoria:
 ## Lição de casa
 
 ```{r}
+rx_aulas <- paste(paste0("0", 1:params$aula), collapse = "|")
 "materiais/exercicios/" |>
   fs::dir_ls(fail = FALSE, type = "file") |>
   path_to_url() |>
+  dplyr::filter(stringr::str_detect(url, rx_aulas)) |> 
   dplyr::select(Exercício = url) |>
   knitr::kable()
 ```
@@ -101,15 +106,25 @@ comentamos quando tiramos dúvidas (não necessariamente são relacionadas com o
 conteúdo da aula).
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-arquivo_csv_materiais <- "extras.csv"
-if (file.exists(arquivo_csv_materiais)) {
-  arquivo_csv_materiais |>
-    readr::read_csv2(show_col_types = FALSE) |>
-    knitr::kable()
-} else {
-  cat("Em breve!")
-}
+```{r echo=FALSE, message=FALSE}
+safe_buscar_materiais_extras <- purrr::possibly(
+  .f = function(){
+    
+    googlesheets4::gs4_deauth()
+
+    "1Oif55qAuR_yYLt0D2Ri744SAlaFf9SleJfQIIUgB_hA" |>
+      googlesheets4::read_sheet("visualizacao") |>
+      dplyr::mutate(link = glue::glue("[{desc}]({url})")) |>
+      dplyr::select(-desc,-url) |>
+      dplyr::arrange(aula) |>
+      dplyr::select(-aula) |> 
+      knitr::kable(col.names = c("Tema", "Descrição")) 
+  }, "Verificar tabela de materiais extras")
+
+tabela <- safe_buscar_materiais_extras()
+
+tabela
+
 ```
 
 ## Redes sociais da Curso-R
