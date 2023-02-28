@@ -53,6 +53,10 @@ Fora do horário de aula ou monitoria:
 
 - Perguntas sobre R, principalmente as que envolverem código, deverão ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
+## Pacotes necessários
+
+Consulte [aqui](https://github.com/curso-r/main-visualizacao#pacotes-necess%C3%A1rios).
+
 ## Slides
 
 ```{r}
@@ -63,16 +67,8 @@ Fora do horário de aula ou monitoria:
   knitr::kable()
 ```
 
-
-## Scripts utilizados em aula
-
 ```{r}
 rx_aulas <- paste(paste0("0", 1:params$aula), collapse = "|")
-"materiais/exemplos_de_aula/" |>
-  fs::dir_ls(fail = FALSE, type = "file") |>
-  path_to_url() |>
-  dplyr::select(Exemplo = url) |>
-  knitr::kable()
 ```
 
 ## Práticas
@@ -116,6 +112,7 @@ safe_buscar_materiais_extras <- purrr::possibly(
       googlesheets4::read_sheet("visualizacao") |>
       dplyr::mutate(link = glue::glue("[{desc}]({url})")) |>
       dplyr::select(-desc,-url) |>
+      dplyr::filter(aula <= params$aula) |> 
       dplyr::arrange(aula) |>
       dplyr::select(-aula) |> 
       knitr::kable(col.names = c("Tema", "Descrição")) 
