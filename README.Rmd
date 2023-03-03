@@ -30,7 +30,7 @@ path_to_url <- function(path) {
 ```{r results = 'asis'}
 # Baixar o ZIP do repo da turma (o repo principal não vai ter os scripts feitos em aula)
 if (params$download_material == "TRUE") {
-  glue::glue("- [Clique aqui](https://github.com/curso-r/{params$turma}/archive/refs/heads/main.zip) para baixar o material do curso.")
+  glue::glue("- [Clique aqui](https://curso-r.github.io/202303-visualizacao/materiais/material_do_curso.zip) para baixar o material do curso.")
 }
 ```
 
