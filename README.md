@@ -40,15 +40,25 @@ Consulte
 
 ## Práticas
 
-| Exemplo                                                                           |
-|:----------------------------------------------------------------------------------|
-| [01-ggplot.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot.R) |
+| Exemplo                                                                                               |
+|:------------------------------------------------------------------------------------------------------|
+| [01-ggplot-aula-2.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot-aula-2.R)       |
+| [01-ggplot.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot.R)                     |
+| [02-exemplo-starwars.R](https://curso-r.github.io/202303-visualizacao/praticas/02-exemplo-starwars.R) |
 
 ## Lição de casa
 
-| Exercício                                                                                                   |
-|:------------------------------------------------------------------------------------------------------------|
-| [01-02-introducao.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/01-02-introducao.R) |
+| Exercício                                                                                                                 |
+|:--------------------------------------------------------------------------------------------------------------------------|
+| [01-02-introducao.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/01-02-introducao.R)               |
+| [03-otimizacao.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-otimizacao.R)                     |
+| [03-pinguins.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-pinguins.png)                     |
+| [03-pixar.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-pixar.png)                           |
+| [03-voos.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/03-voos.png)                             |
+| [04-extensoes.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/04-extensoes.R)                       |
+| [04-pinguins_histogram.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/04-pinguins_histogram.png) |
+| [04-starwars.png](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/04-starwars.png)                     |
+| [05-interatividade-sf.R](https://curso-r.github.io/202303-visualizacao/materiais/exercicios/05-interatividade-sf.R)       |
 
 ## Material extra
 
@@ -56,18 +66,35 @@ Referências extras relacionadas com o conteúdos das aulas, ou materiais
 que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
-| Tema               | Descrição                                                                                                   |
-|:-------------------|:------------------------------------------------------------------------------------------------------------|
-| Comunidades        | [Comunidades - R-Ladies São Paulo](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)            |
-| Revisão            | [Revisão dplyr - manipulação de dados](https://livro.curso-r.com/7-2-dplyr.html)                            |
-| 1\. Básico         | [Documentação do ggplot2](https://ggplot2.tidyverse.org/reference/index.html)                               |
-| 1\. Básico         | [Especificações aestéticas do ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html)           |
-| 1\. Básico         | [Cheatsheet do ggplot2](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)        |
-| Sugestões da turma | [ggview - extensao do ggplot para explorar tamanhos para exportar gráfico](https://github.com/idmn/ggview)  |
-| 1\. Básico         | [Livro da Curso-R - Capítulo sobre ggplot2](https://livro.curso-r.com/8-1-o-pacote-ggplot2.html)            |
-| 1\. Básico         | [Data to viz - Site sobre tipos de gráfico com códigos de exemplo](https://www.data-to-viz.com/)            |
-| Dúvidas            | [Post sobre o pipe nativo: \|\>](https://beamilz.com/posts/2021-05-18-experimentando-o-r-410/pt/index.html) |
-| 1\. Básico         | [Gráficos de pizza](https://forum.abj.org.br/t/graficos-de-pizza-sao-ruins/41)                              |
+| Tema               | Descrição                                                                                                                             |
+|:-------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| Comunidades        | [Comunidades - R-Ladies São Paulo](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)                                      |
+| Revisão            | [Revisão dplyr - manipulação de dados](https://livro.curso-r.com/7-2-dplyr.html)                                                      |
+| 1\. Básico         | [Documentação do ggplot2](https://ggplot2.tidyverse.org/reference/index.html)                                                         |
+| 1\. Básico         | [Especificações aestéticas do ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html)                                     |
+| 1\. Básico         | [Cheatsheet do ggplot2](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)                                  |
+| Sugestões da turma | [ggview - extensao do ggplot para explorar tamanhos para exportar gráfico](https://github.com/idmn/ggview)                            |
+| 1\. Básico         | [Livro da Curso-R - Capítulo sobre ggplot2](https://livro.curso-r.com/8-1-o-pacote-ggplot2.html)                                      |
+| 1\. Básico         | [Data to viz - Site sobre tipos de gráfico com códigos de exemplo](https://www.data-to-viz.com/)                                      |
+| Dúvidas            | [Post sobre o pipe nativo: \|\>](https://beamilz.com/posts/2021-05-18-experimentando-o-r-410/pt/index.html)                           |
+| 1\. Básico         | [Gráficos de pizza](https://forum.abj.org.br/t/graficos-de-pizza-sao-ruins/41)                                                        |
+| 2\. Otimização     | [Galeria data-to-viz - ajuda a escolher qual visualização usar](https://www.data-to-viz.com/)                                         |
+| 2\. Otimização     | [Galeria de gráficos - exemplos com gráfico de linha](https://r-graph-gallery.com/line-plot)                                          |
+| 2\. Otimização     | [Cheatsheet do ggplot2](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)                            |
+| Dúvidas            | [Estágio de vida das funções](https://lifecycle.r-lib.org/articles/stages.html)                                                       |
+| Tipos de gráfico   | [Interpretação boxplot](https://fernandafperes.com.br/blog/interpretacao-boxplot/)                                                    |
+| 1\. Básico         | [Cores no R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)                                                                   |
+| 1\. Básico         | [Livro da Curso-R - Capítulo sobre Fatores](https://livro.curso-r.com/7-6-forcats.html)                                               |
+| 2\. Otimização     | [Paletas de cores hexadecimais](https://coolors.co/generate)                                                                          |
+| 2\. Otimização     | [Pacote prismatic::color(colors())](https://emilhvitfeldt.github.io/prismatic/)                                                       |
+| 2\. Otimização     | [Color brewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)                                                             |
+| 2\. Otimização     | [Tinter, voce da uma cor e ele gera uma paleta!](https://github.com/sebdalgarno/tinter)                                               |
+| 2\. Otimização     | [Pacote para visualização de paletas de cores](https://github.com/EmilHvitfeldt/paletteer)                                            |
+| 2\. Otimização     | [Visualização de paletas para pessoas com daltonismo](https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40) |
+| 2\. Otimização     | [Documentação Color Brewer ggplot2](https://ggplot2.tidyverse.org/reference/scale_brewer.html)                                        |
+| 2\. Otimização     | [Paleta de cores - Adobe](https://color.adobe.com/pt/create/color-wheel)                                                              |
+| 2\. Otimização     | [Pacote paletteer - galeria de paletas de cores](https://emilhvitfeldt.github.io/paletteer/)                                          |
+| 2\. Otimização     | [Vignette do ggplot2 - exemplos de atributos estéticos](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html)                    |
 
 ## Redes sociais da Curso-R
 
