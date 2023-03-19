@@ -138,23 +138,23 @@ tabela
 
 ```{r include = FALSE}
 # Criar arquivo _config.yml
-if (params$download_material == TRUE) {
-  content <- glue::glue(
-    "theme: jekyll-theme-minimal", "\n",
-    "logo: assets/logo.png", "\n",
-    "title: {params$nome_curso}", "\n",
-    "show_downloads: true", "\n",
-    "link_material: 'https://github.com/curso-r/{params$turma}/archive/refs/heads/main.zip'",
-    "\n"
-  )
-} else {
-  content <- glue::glue(
-    "theme: jekyll-theme-minimal", "\n",
-    "logo: assets/logo.png", "\n",
-    "title: {params$nome_curso}", "\n",
-    "show_downloads: false", "\n"
-  )
-}
-
-readr::write_lines(content, "_config.yml")
+# if (params$download_material == TRUE) {
+#   content <- glue::glue(
+#     "theme: jekyll-theme-minimal", "\n",
+#     "logo: assets/logo.png", "\n",
+#     "title: {params$nome_curso}", "\n",
+#     "show_downloads: true", "\n",
+#     "link_material: 'https://github.com/curso-r/{params$turma}/archive/refs/heads/main.zip'",
+#     "\n"
+#   )
+# } else {
+#   content <- glue::glue(
+#     "theme: jekyll-theme-minimal", "\n",
+#     "logo: assets/logo.png", "\n",
+#     "title: {params$nome_curso}", "\n",
+#     "show_downloads: false", "\n"
+#   )
+# }
+# 
+# readr::write_lines(content, "_config.yml")
 ```
