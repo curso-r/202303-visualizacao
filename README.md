@@ -40,11 +40,16 @@ Consulte
 
 ## Práticas
 
-| Exemplo                                                                                               |
-|:------------------------------------------------------------------------------------------------------|
-| [01-ggplot-aula-2.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot-aula-2.R)       |
-| [01-ggplot.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot.R)                     |
-| [02-exemplo-starwars.R](https://curso-r.github.io/202303-visualizacao/praticas/02-exemplo-starwars.R) |
+| Exemplo                                                                                                       |
+|:--------------------------------------------------------------------------------------------------------------|
+| [01-ggplot-aula-2.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot-aula-2.R)               |
+| [01-ggplot.R](https://curso-r.github.io/202303-visualizacao/praticas/01-ggplot.R)                             |
+| [02-exemplo-starwars.R](https://curso-r.github.io/202303-visualizacao/praticas/02-exemplo-starwars.R)         |
+| [03-atividade-mananciais](https://curso-r.github.io/202303-visualizacao/praticas/03-atividade-mananciais)     |
+| [03-atividade-mananciais.R](https://curso-r.github.io/202303-visualizacao/praticas/03-atividade-mananciais.R) |
+| [03-cores.R](https://curso-r.github.io/202303-visualizacao/praticas/03-cores.R)                               |
+| [04-otimizacao-starwars.R](https://curso-r.github.io/202303-visualizacao/praticas/04-otimizacao-starwars.R)   |
+| [some_time_later](https://curso-r.github.io/202303-visualizacao/praticas/some_time_later)                     |
 
 ## Lição de casa
 
@@ -95,6 +100,13 @@ relacionadas com o conteúdo da aula).
 | 2\. Otimização     | [Paleta de cores - Adobe](https://color.adobe.com/pt/create/color-wheel)                                                              |
 | 2\. Otimização     | [Pacote paletteer - galeria de paletas de cores](https://emilhvitfeldt.github.io/paletteer/)                                          |
 | 2\. Otimização     | [Vignette do ggplot2 - exemplos de atributos estéticos](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html)                    |
+| 1\. Básico         | [Formatação de datas - documentação da função strptime](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/strptime)  |
+| 2\. Otimização     | [Pacote extrafont - importar fontes no windows](https://github.com/wch/extrafont)                                                     |
+| 2\. Otimização     | [Exemplos de ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)                                        |
+| 2\. Otimização     | [Pacote Thematic](https://rstudio.github.io/thematic/index.html)                                                                      |
+| 2\. Otimização     | [Pacote com tema do Studio Ghibli](https://ewenme.github.io/ghibli/)                                                                  |
+| 2\. Otimização     | [Ferramenta para buscar paletas de cores](https://coolors.co/palettes/trending)                                                       |
+| 2\. Otimização     | [Pacote ggimprensa - temas de jornais brasileiros](https://brunomioto.github.io/ggimprensa/)                                          |
 
 ## Redes sociais da Curso-R
 
