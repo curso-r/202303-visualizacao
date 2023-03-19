@@ -1,0 +1,110 @@
+# Carregar a base de dados
+library(tidyverse)
+library(knitr)
+
+
+mananciais <- read_delim("https://github.com/beatrizmilz/mananciais/raw/master/inst/extdata/mananciais.csv", 
+                         ";", escape_double = FALSE, col_types = cols(data = col_date(format = "%Y-%m-%d")), 
+                         locale = locale(decimal_mark = ",", grouping_mark = "."), 
+                         trim_ws = TRUE)
+
+
+# Parte 1: Crie um gráfico de linha, sendo que cada sistema deve ser 
+# representado por uma cor diferente.
+# O eixo  x deve representar a data, e o eixo y deve representar o volume 
+# em porcentagem.
+# Extra: Use a função facet_wrap() para criar um gráfico por sistema! 
+# facet_wrap(vars(NOME_DA_COLUNA)) 
+# https://ggplot2.tidyverse.org/reference/facet_wrap.html
+
+
+
+
+
+
+
+# Parte 2: Use alguns elementos que aprendemos na aula 2, e melhore a visualização.
+# Ex: adicione um tema, uma escala de cores para os sistemas (não é contínuo!), legendas. 
+
+
+
+
+
+# exemplo de como subir um grafico no imgur
+exemplo_starwars <- starwars |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point()
+
+ggsave("exemplo_starwars.png", plot =  exemplo_starwars)
+
+imgur_upload("exemplo_starwars.png")
+
+
+
+# FACET WRAP ---- 1 VAR 
+starwars |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() +
+  facet_wrap(vars(gender)) # Com vars
+
+
+starwars |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() +
+  facet_wrap(~gender) # com ~
+
+
+
+
+
+# repare na diferença de facet e fazer os
+# gráficos separadamente
+starwars |> 
+  filter(gender == "feminine") |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() 
+
+
+starwars |> 
+  filter(gender == "masculine") |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() 
+
+
+
+
+
+
+# facet grid - 2 variaveis ----------------
+
+starwars |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() +
+  facet_grid(gender ~ sex)
+
+
+starwars |> 
+  ggplot() +
+  aes(x = height, y = mass, color = gender) +
+  geom_point() +
+  facet_grid(vars(gender), vars(sex))
+
+
+
+
+library(dados)
+dados::diamante
+
+diamante |> 
+  ggplot() + 
+  aes(x = quilate, y = preco) +
+  geom_point(alpha = 0.5) +
+  facet_grid(vars(corte), vars(cor)) 
+
+
