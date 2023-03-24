@@ -49,6 +49,12 @@ Consulte
 | [03-atividade-mananciais.R](https://curso-r.github.io/202303-visualizacao/praticas/03-atividade-mananciais.R) |
 | [03-cores.R](https://curso-r.github.io/202303-visualizacao/praticas/03-cores.R)                               |
 | [04-otimizacao-starwars.R](https://curso-r.github.io/202303-visualizacao/praticas/04-otimizacao-starwars.R)   |
+| [05-anotacoes.R](https://curso-r.github.io/202303-visualizacao/praticas/05-anotacoes.R)                       |
+| [06-patchwork.R](https://curso-r.github.io/202303-visualizacao/praticas/06-patchwork.R)                       |
+| [07-ggridges.R](https://curso-r.github.io/202303-visualizacao/praticas/07-ggridges.R)                         |
+| [08-gganimate.R](https://curso-r.github.io/202303-visualizacao/praticas/08-gganimate.R)                       |
+| [gif_ggplot2.gif](https://curso-r.github.io/202303-visualizacao/praticas/gif_ggplot2.gif)                     |
+| [mp4_ggplot2.mp4](https://curso-r.github.io/202303-visualizacao/praticas/mp4_ggplot2.mp4)                     |
 | [some_time_later](https://curso-r.github.io/202303-visualizacao/praticas/some_time_later)                     |
 
 ## Lição de casa
@@ -107,6 +113,17 @@ relacionadas com o conteúdo da aula).
 | 2\. Otimização     | [Pacote com tema do Studio Ghibli](https://ewenme.github.io/ghibli/)                                                                  |
 | 2\. Otimização     | [Ferramenta para buscar paletas de cores](https://coolors.co/palettes/trending)                                                       |
 | 2\. Otimização     | [Pacote ggimprensa - temas de jornais brasileiros](https://brunomioto.github.io/ggimprensa/)                                          |
+| 3\. Extensões      | [Pacote ggrepel - afastar as anotações (labels)](https://ggrepel.slowkow.com/)                                                        |
+| 3\. Extensões      | [Pacote gghighlight - realçando pontos](https://blog.curso-r.com/posts/2020-02-20-gghighlight/)                                       |
+| 3\. Extensões      | [Galeria de extensões para o ggplot2](https://exts.ggplot2.tidyverse.org/gallery/)                                                    |
+| 3\. Extensões      | [Pacote ggrepel - afastar as anotações (labels)](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html)              |
+| 3\. Extensões      | [Hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)                                                                                  |
+| 3\. Extensões      | [Pacote ggridges](https://wilkelab.org/ggridges/)                                                                                     |
+| 3\. Extensões      | [Pacote gganimate](https://gganimate.com/index.html)                                                                                  |
+| 3\. Extensões      | [Capítulo 6 do livro Análises ecológicas no R - Visualização de dado](https://analises-ecologicas.netlify.app/cap6.html)              |
+| 3\. Extensões      | [Colocando anotacoes no patchwork (numero do grafico)](https://patchwork.data-imaginist.com/articles/guides/annotation.html)          |
+| 3\. Extensões      | [Pacote gghighlight - realçando pontos](https://yutannihilation.github.io/gghighlight/)                                               |
+| 3\. Extensões      | [Pacote ggpattern](https://coolbutuseless.github.io/package/ggpattern/)                                                               |
 
 ## Redes sociais da Curso-R
 

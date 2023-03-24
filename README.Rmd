@@ -4,7 +4,7 @@ params:
   turma: 202303-visualizacao
   nome_curso: Visualização de dados
   download_material: 'TRUE'
-  aula: 3
+  aula: 4
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
